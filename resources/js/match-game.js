@@ -81,8 +81,12 @@ MatchGame.renderCards = function(cardValues, $game) {
  */
 
 MatchGame.flipCard = function($card, $game) {
-	if ($card.data('isFlipped')){
-		return;
+	// if ($card.data('isFlipped')){
+	// 	return;
+	// }
+
+	if ($card.data('isFlipped').length === 16){
+		document.getElementbyID('secret').style.display = 'block';
 	}
 
 	$card.css('background-color', $card.data('color')).text($card.data('value')).data('isFlipped', true);
@@ -106,10 +110,16 @@ MatchGame.flipCard = function($card, $game) {
 			card2.css('background-color', 'rgb(32, 64, 86').text('').data('isFlipped', false);
 		}, 1000)
 			
-		}
+		}	
+
 	$game.data('flippedCards', []);
 	}
+
 };
+
+// if ($('.card').css('background-color') == 'rgb(153, 153, 153') {
+// 		document.getElementbyID('secret').style.display = 'block';
+// 	}
 
 
 
