@@ -117,9 +117,6 @@ MatchGame.flipCard = function($card, $game) {
 
 };
 
-// if ($('.card').css('background-color') == 'rgb(153, 153, 153') {
-// 		document.getElementbyID('secret').style.display = 'block';
-// 	}
 
 
 
