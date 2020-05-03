@@ -81,9 +81,7 @@ MatchGame.renderCards = function(cardValues, $game) {
  */
 
 MatchGame.flipCard = function($card, $game) {
-	// if ($card.data('isFlipped')){
-	// 	return;
-	// }
+	
 
 	if ($card.data('isFlipped').length === 16){
 		document.getElementbyID('secret').style.display = 'block';
@@ -113,9 +111,8 @@ MatchGame.flipCard = function($card, $game) {
 		}	
 
 	$game.data('flippedCards', []);
-	}
-
-};
+	};
+}
 
 
 

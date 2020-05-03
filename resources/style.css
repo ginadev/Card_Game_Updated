@@ -37,9 +37,3 @@ h1, h2{
 	color: rgb(255, 255, 255);
 	cursor: pointer;
 }
-
-#secret{
-	color: #fc027f;
-	font-size: 3rem;
-	display: none;
-}
