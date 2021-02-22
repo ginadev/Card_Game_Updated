@@ -23,17 +23,36 @@ h1, h2{
 	font-weight: bold;
 }
 
+
+.game-grid{
+	max-width: 80rem;
+} /*This is to ensure that the game always looks relatively neat with the same amount of cards in a row*/
+
+
+.text{
+	padding-bottom: 155px;
+} /*This is to ensure that the game doesn't wrap around the text*/
+
 .card{
 	display: flex;
-	height: 12.5rem;
+	height: 15.5rem;
+	width:12rem;
 	background-color: rgb(32, 64, 86);
 	border: 4px solid #ffffff;
 	border-radius: 8px;
-	color: rgb(255, 255, 255);
 	justify-content: center;
 	align-items: center;
 	font-weight: 900;
-	font-size: 7rem;
-	color: rgb(255, 255, 255);
+	font-size: 0rem; /*The number is needed in the javascript, but as the game is now image based it doesn't need to be seen.*/
 	cursor: pointer;
+	background-size: cover;
 }
+
+#secret{
+	display: none;
+	font-size: 25px;
+	color: #f542a7;
+}
+
+
+

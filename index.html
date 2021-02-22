@@ -17,7 +17,6 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-	<link rel="manifest" href="/manifest.json">
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
@@ -30,16 +29,17 @@
 	<div id="emitter"></div>
 	<div class="container">
 		<div class="row">
-			<div class="col-md-3 col-xs-12">
+			<div class="col-md-3 col-xs-12 text">
 				<h1>Match Game</h1>
 				<h2>Rules</h2>
-				<p>Click on a card to reveal the number on the other side. Click on a second card to try and find a match to the first. If you succeed, the pair will be removed from play. If not, try again!</p>
+				<p>Click on a card to reveal the magazine on the other side. Click on a second card to try and find a match to the first. If you succeed, the pair will stay flipped. If not, they will return and you need to try again!</p>
 				<h2>How to Win</h2>
 				<p>You win when all pairs have been found.</p>
 				<p>Made by Gina</p>
+				<strong id="secret">You completed the game!! Here is your prize. <br><img height=150px src="https://media0.giphy.com/media/9xt1MUZqkneFiWrAAD/giphy.gif"> </strong>
 			</div>
 			
-			<div class="col-md-9 col-xs-12" id="game">
+			<div class="game-grid" id="game">
 				<div class="row">
 					
 				</div>
